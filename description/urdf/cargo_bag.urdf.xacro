@@ -2,12 +2,12 @@
 <robot name="cargo" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <link name="body">
-<!--     <collision>
+    <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://isaac_description/meshes/half_ctb_02_4.dae" scale="1 1 1"/>
       </geometry>
-    </collision> -->
+    </collision>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
@@ -27,11 +27,25 @@
         <mesh filename="package://astrobee_handrail_8_5/meshes/handrail_8_5.dae"/>
       </geometry>
     </visual>
+    
+    <collision>
+      <origin xyz="0.1 -0.21 0" rpy="0 0 -1.57" />
+      <geometry>
+        <mesh filename="package://astrobee_handrail_8_5/meshes/handrail_8_5.dae"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.1 -0.21 0" rpy="0 0 -1.57" />
+      <geometry>
+        <mesh filename="package://astrobee_handrail_8_5/meshes/handrail_8_5.dae"/>
+      </geometry>
+    </visual>
+
 
     <inertial>
-      <mass value="0.5" />
+      <mass value="9.58" />
       <origin xyz="0 0 0" rpy="0 0 0" />
-      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+      <inertia ixx="0.153427995" ixy="0" ixz="0" iyy="0.14271405" iyz="0" izz="0.162302759" />
     </inertial>
   </link>
 

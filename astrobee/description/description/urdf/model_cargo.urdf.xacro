@@ -20,7 +20,7 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
   <gazebo>
-    <plugin name="cargo_ros" filename="libgazebo_model_plugin_cargo.so">>
+    <plugin name="cargo_ros" filename="libgazebo_model_plugin_cargo.so">
       <namespace>/${ns}/</namespace>
       <rate>10.0</rate>          <!-- Rate at which dock state checked  -->
       <distance>0.05</distance>  <!-- Threshold distance for magnetism  -->
